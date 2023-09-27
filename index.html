@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-06</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <!--Google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <!-- Boxicon link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="./font/bootstrap-icons.min.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+  
+   <!--===============================-->   
+   <!--========= navber strat ========-->   
+   <!--===============================-->   
+
+    <section>
+      <div class="container fixed-top">
+        <div class="row nav-bg-change">
+          <div class="col-lg-2">
+            <div class="brand-logo">
+              <h3>GIFTOS</h3>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#shop">Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#why-us">Why us</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#testimonial">Testimonial</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact us</a>
+                    </li>   
+                  </ul>
+                </div> 
+            </nav>
+          </div>
+          <div class="col-lg-4">
+            <div class="navbar-left">
+              <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-heart-fill text-black-50 fs-5"></i><span class="position-absolute  translate-middle badge rounded-pill bg-success">9+</span> Like</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#Modal" href="#"><i class="bi bi-person-fill text-black-50 fs-5"></i> Log IN</a></li>
+                <li class="nav-item"><a class="nav-link position-relative" data-bs-toggle="offcanvas" data-bs-target="#myoffcanvas" href="#"><i class="bi bi-cart-plus-fill text-black-50 fs-5"></i><span class="position-absolute  translate-middle badge rounded-pill bg-success">6</span> Cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      </div>
+      </div>
+      </nav>
+    </section>
+   <!--===============================-->   
+   <!--=========  navber end  ========-->   
+   <!--===============================-->   
+   <!--===============================-->   
+   <!--=========  modal start ========-->   
+   <!--===============================-->   
+   <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title fs-2 fw-bold" id="ModalLabel">Log IN</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" >
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" >
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputEmail1" >
+              <p>By Signup, you agree to our <a class="text-primary text-decoration-none" href="#">Terms of Service</a> & <a class="text-primary text-decoration-none" href="#">Privacy Policy</a>
+              </p>
+            </div>
+           <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-success btn-lg px-lg-5 mb-2">Submit</button>
+           </div>
+            <div class="d-flex justify-content-center">
+              <p>Already have an account? <a class=" text-primary text-decoration-none " href="#">Sign in</a></p>
+            </div>
+            
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+   <!--===============================-->   
+   <!--========   model end   ========-->   
+   <!--===============================--> 
+
+  <!--===============================-->   
+   <!--==== offcanvas section start ==-->   
+   <!--===============================--> 
+
+
+  <section>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="myoffcanvas" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h2 class="fw-bold" id="myoffcanvas">Shop Cart</h2>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <hr>
+    <div class="row">
+      <div class="col-lg-4 my-auto">
+        <div class="offcanvas-item-img d-flex justify-content-center" style="width: 50%;">
+          <img src="img/p1.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3 mt-3">
+        <a class="text-decoration-none fw-bold fs-4 text-center" href="#">Ring</a>
+      </div>
+      <div class="col-lg-5 mt-3">
+        <p class="fs-5 fw-bold">Price <span class="text-danger">$100</span></p>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <div class="col-lg-4 my-auto">
+        <div class="offcanvas-item-img d-flex justify-content-center" style="width: 50%;">
+          <img src="img/p2.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3 mt-3">
+        <a class="text-decoration-none fw-bold fs-4 text-center" href="#">Watch</a>
+      </div>
+      <div class="col-lg-5 mt-3">
+        <p class="fs-5 fw-bold">Price <span class="text-danger">$300</span></p>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <div class="col-lg-4 my-auto">
+        <div class="offcanvas-item-img d-flex justify-content-center" style="width: 50%;">
+          <img src="img/p3.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3 mt-3">
+        <a class="text-decoration-none fw-bold fs-4 text-center" href="#">Teddy </a>
+      </div>
+      <div class="col-lg-5 mt-3">
+        <p class="fs-5 fw-bold">Price <span class="text-danger">$110</span></p>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <div class="col-lg-4 my-auto">
+        <div class="offcanvas-item-img d-flex justify-content-center" style="width: 50%;">
+          <img src="img/p4.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3 mt-3">
+        <a class="text-decoration-none fw-bold fs-4 text-center" href="#">Flower</a>
+      </div>
+      <div class="col-lg-5 mt-3">
+        <p class="fs-5 fw-bold">Price <span class="text-danger">$45</span></p>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <div class="col-lg-4 my-auto">
+        <div class="offcanvas-item-img d-flex justify-content-center" style="width: 50%;">
+          <img src="img/p7.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3 mt-3">
+        <a class="text-decoration-none fw-bold fs-4 text-center" href="#">Watch</a>
+      </div>
+      <div class="col-lg-5 mt-3">
+        <p class="fs-5 fw-bold">Price <span class="text-danger">$400</span></p>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <div class="col-lg-4 my-auto">
+        <div class="offcanvas-item-img d-flex justify-content-center" style="width: 50%;">
+          <img src="img/p8.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3 mt-3">
+        <a class="text-decoration-none fw-bold fs-4 text-center" href="#">Flower</a>
+      </div>
+      <div class="col-lg-5 mt-3">
+        <p class="fs-5 fw-bold">Price <span class="text-danger">$70</span></p>
+      </div>
+    </div>
+    <hr>
+    <div class="cart-action-btn d-flex justify-content-between mt-3">
+      <a class="btn btn-success" href="">Continue Shopping</a>
+      <a class="btn btn-dark" href="">Update Cart</a>
+
+    </div>
+  </div>
+</div>
+  </section>
+
+
+  <!--===============================-->   
+   <!--==== offcanvas section end ===-->   
+   <!--===============================--> 
+   
+   
+
+
+
+
+
+
+
+
+
+
+   <!--===============================-->   
+   <!--=======   banner strart   ======-->   
+   <!--===============================-->  
+     <section>
+      <div class="container banner-section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class= " carousel-inner" style="background: #fb7185;">
+            <div class="carousel-item active">
+               <div class="banner">
+                <div class="row">
+                  <div class="col-lg-6 offset-1">
+                    <div class="banner-text">
+                      <h1 class="fw-bold display-3 text-white">Welcome To Our Gift Shop</h1>
+                      <p class="fs-5 text-white mt-3">Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis</p>
+      
+                      <a class="btn btn-pink fw-bold mt-4 btn-lg" href="#">CONTACT US</a>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 text-center">
+                    <div class="banner-img">
+                      <img src="img/slider-img.png" class="card-img-top"  alt="">
+                    </div>
+                  </div>
+                </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+              <div class="banner">
+                <div class="row">
+                  <div class="col-lg-6 offset-1">
+                    <div class="banner-text">
+                      <h1 class="fw-bold display-3 text-white">Welcome To Our Gift Shop</h1>
+                      <p class="fs-5 text-white mt-3">Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis</p>
+      
+                      <a class="btn btn-pink fw-bold mt-4 btn-lg" href="#">CONTACT US</a>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="banner-img">
+                      <img src="img/slider-img.png" class="card-img-top"  alt="">
+                    </div>
+                  </div>
+                </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+              <div class="banner">
+                <div class="row">
+                  <div class="col-lg-6 offset-1">
+                    <div class="banner-text">
+                      <h1 class="fw-bold display-3 text-white">Welcome To Our Gift Shop</h1>
+                      <p class="fs-5 text-white mt-3">Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis</p>
+      
+                      <a class="btn btn-pink fw-bold mt-4 btn-lg" href="#">CONTACT US</a>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="banner-img">
+                      <img src="img/slider-img.png" class="card-img-top"  alt="">
+                    </div>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+   <!--===============================-->   
+   <!--=======   banner end   ======-->   
+   <!--===============================-->  
+
+
+
+
+   <!--===============================-->   
+   <!--===  latest products start   ==-->   
+   <!--===============================-->  
+   <section id="shop">
+    <div class="container latest-products-items">
+      <div class="banner2-text">
+        <h1 class="fw-bold text-center">Our Latest Proudcts</h1>
+      </div>
+      <div class="row mb-3">
+        <div class="col-lg-3 col-md-4 col-sm-6"> <!--latest product-item-1-->
+          <div class="product-item mb-3">
+            <div class="card">
+              <div class="card-img position-relative mb-3">
+                <img src="img/p1.png" alt="...">
+                <span class="product-top-text">New</span>
+              </div>
+              <div class="card-body ">
+               <div class="d-flex justify-content-between">
+                <span class="fs-5 fw-bold">Ring</span>
+                <span class="fs-5 fw-bold">Price <span class="text-danger">$100</span></span>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6"> <!--latest product-item-2-->
+          <div class="product-item mb-3">
+            <div class="card">
+              <div class="card-img position-relative mb-3">
+                <img src="img/p7.png" alt="...">
+                <span class="product-top-text">New</span>
+              </div>
+              <div class="card-body ">
+               <div class="d-flex justify-content-between">
+                <span class="fs-5 fw-bold">Watch</span>
+                <span class="fs-5 fw-bold">Price <span class="text-danger">$300</span></span>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6"> <!--latest product-item-3-->
+          <div class="product-item mb-3">
+            <div class="card">
+              <div class="card-img position-relative mb-3">
+                <img src="img/p1.png" alt="...">
+                <span class="product-top-text">New</span>
+              </div>
+              <div class="card-body ">
+               <div class="d-flex justify-content-between">
+                <span class="fs-5 fw-bold">Ring</span>
+                <span class="fs-5 fw-bold">Price <span class="text-danger">$110</span></span>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6"> <!--latest product-item-4-->
+          <div class="product-item mb-3">
+            <div class="card">
+              <div class="card-img position-relative mb-3">
+                <img src="img/p7.png" alt="...">
+                <span class="product-top-text">New</span>
+              </div>
+              <div class="card-body ">
+               <div class="d-flex justify-content-between">
+                <span class="fs-5 fw-bold">Watch</span>
+                <span class="fs-5 fw-bold">Price <span class="text-danger">$45</span></span>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6"> <!--latest product-item-5-->
+          <div class="product-item mb-3">
+            <div class="card">
+              <div class="card-img position-relative mb-3">
+                <img src="img/p7.png" alt="...">
+                <span class="product-top-text">New</span>
+              </div>
+              <div class="card-body ">
+               <div class="d-flex justify-content-between">
+                <span class="fs-5 fw-bold">Watch</span>
+                <span class="fs-5 fw-bold">Price <span class="text-danger">$95</span></span>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6"> <!--latest product-item-6-->
+          <div class="product-item mb-3">
+            <div class="card">
+              <div class="card-img position-relative mb-3">
+                <img src="img/p1.png" alt="...">
+                <span class="product-top-text">New</span>
+              </div>
+              <div class="card-body ">
+               <div class="d-flex justify-content-between">
+                <span class="fs-5 fw-bold">Ring</span>
+                <span class="fs-5 fw-bold">Price <span class="text-danger">$70</span></span>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6"> <!--latest product-item-7-->
+          <div class="product-item mb-3">
+            <div class="card">
+              <div class="card-img position-relative mb-3">
+                <img src="img/p7.png" alt="...">
+                <span class="product-top-text">New</span>
+              </div>
+              <div class="card-body ">
+               <div class="d-flex justify-content-between">
+                <span class="fs-5 fw-bold">Watch</span>
+                <span class="fs-5 fw-bold">Price <span class="text-danger">$400</span></span>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6"> <!--latest product-item-8-->
+          <div class="product-item mb-3">
+            <div class="card">
+              <div class="card-img position-relative mb-3">
+                <img src="img/p1.png" alt="...">
+                <span class="product-top-text">New</span>
+              </div>
+              <div class="card-body ">
+               <div class="d-flex justify-content-between">
+                <span class="fs-5 fw-bold">Ring</span>
+                <span class="fs-5 fw-bold">Price <span class="text-danger">$450</span></span>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="text-center product-item-btn">
+          <a class="btn btn-pink px-5 mt-4 btn-lg" href="#">View All Products</a>
+        </div>
+    </div>
+  </section>
+   <!--===============================-->   
+   <!--====  latest products end   ===-->   
+   <!--===============================-->  
+
+   <!--===============================-->   
+   <!-- section-3 saving poster start -->   
+   <!--===============================-->  
+
+
+  <section>
+    <div class="container saving-section">
+      <div class="row">
+        <div class="col-lg-5">
+            <div class="saving-poster-img ">
+              <img src="img/saving-img.png" alt="">
+            </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="saving-poster">
+            <h1 class=" fw-bold">BEST SAVINGS ON <br> NEW ARRIVALS</h1>
+            <p class="fs-5 mt-3">Qui ex dolore at repellat, quia neque doloribus omnis facere adipisci, ipsum eos odio fugit ut eveniet blanditiis of adipisci praesentium totam non nostrum dignissimos nihil eius facere et eaque. Qui, animi obcaecati.</p>
+            <div class="poster-btn mb-4">
+              <a class="btn btn-white px-lg-5"  href="#">Buy Now</a> 
+              <a class="btn btn-white px-lg-5" href="#">See More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+   <!--===============================-->   
+   <!--= section-3 saving poster end =-->   
+   <!--===============================-->  
+
+   <!--===============================-->   
+   <!--===   why us section start  ===-->   
+   <!--===============================-->  
+
+    <section id="why-us">
+      <div class="container">
+        <div class="why-us-title">
+          <h1 class="fw-bold text-center">WHY SHOP WITH US</h1>
+        </div>
+        <div class="row mb-lg-5">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="whu-us-bottom-section mb-lg-5">
+                <div class="why-us-logo">
+                  <a class="" href="#"><i class="bi bi-truck"></i></a>
+                </div>
+                <div class="why-us-text ">
+                  <p class="fs-4 fw-bold">Fast Delivery</p>
+                  <p class="fs-5">variations of passages of Lorem Ipsum available</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="whu-us-bottom-section mb-lg-5">
+                <div class="why-us-logo">
+                  <a class="" href="#"><i class="bi bi-currency-dollar"></i></a>
+                </div>
+                <div class="why-us-text">
+                  <p class="fs-4 fw-bold">Free Shiping</p>
+                  <p class="fs-5">variations of passages of Lorem Ipsum available</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="whu-us-bottom-section mb-lg-5">
+                <div class="why-us-logo">
+                  <a class="" href="#"><i class="bi bi-check2-circle"></i></a>
+                </div>
+                <div class="why-us-text">
+                  <p class="fs-4 fw-bold">Best Quality</p>
+                  <p class="fs-5">variations of passages of Lorem Ipsum available</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+   <!--===============================-->   
+   <!--====   why us section end  ====-->   
+   <!--===============================-->  
+
+   <!--===============================-->   
+   <!--====   gift  section start ====-->   
+   <!--===============================-->  
+
+   <section>
+    <div class="container gift-section">
+      <div class="row">
+        <div class="col-lg-5">
+            <div class="gift-poster-img">
+              <img src="img/gifts.png" alt="">
+            </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="gift-poster">
+            <h1 class=" fw-bold">GIFTS FOR YOUR <br> LOVED ONES</h1>
+            <p class="fs-5 mt-3">Omnis ex nam laudantium odit illum harum, excepturi accusamus at corrupti, velit blanditiis unde perspiciatis, vitae minus culpa? Beatae at aut consequuntur porro adipisci aliquam eaque iste ducimus expedita accusantium?</p>
+            <div class="gift-btn mb-4">
+              <a class="btn btn-white px-lg-5" href="#">Buy Now</a>
+              <a class="btn btn-white px-lg-5" href="#">See More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+   <!--===============================-->   
+   <!--====   gift section end  ====-->   
+   <!--===============================-->  
+
+<!--===============================-->   
+   <!--== testimonial section start ==-->   
+   <!--===============================-->  
+
+   <section>
+    <div class="container">
+      <div class="testimonial-title text-center" id="testimonial">
+        <h1 class="fw-bold py-lg-5">TESTIMONIAL</h1>
+      </div>
+      <div class="row">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-text mb-5">
+                <p class="fs-4 mt-3 mb-2 fw-bold text-pink">Rochak</p>
+                <p class="fs-5 text-muted ">Default model text</p>
+                <p>Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy, editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial-text mb-5">
+                  <p class="fs-4 mt-3 mb-2 fw-bold text-pink">Brad Johns</p>
+                  <p class="fs-5 text-muted">Default model text</p>
+                  <p>Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy, editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial-text mb-5">
+                  <p class="fs-4 mt-3 mb-2 fw-bold text-pink">Morijorch</p>
+                  <p class="fs-5 text-muted">Default model text</p>
+                  <p>Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy, editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
+                </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!--===============================-->   
+ <!--==  testimonial section end  ==-->   
+ <!--===============================-->  
+
+   <!--===============================-->   
+   <!--===  contact section strat  ==-->   
+   <!--===============================-->  
+
+    <section>
+      <div class="container mb-lg-5" id="contact">
+        <div class="contact-title text-center mb-lg-5">
+          <h1 class="fw-bold">CONTACT US</h1>
+        </div>
+        <div class="row contact-section">
+          <div class="col-lg-5 offset-1">
+            <p class="fs-5 fw-bold text-center mt-2 text-black-50">Our location in Google Maps</p>
+            <div class="pb-4">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8936553192193!2d90.38806817420709!3d23.75117138874892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8bcd681372b%3A0x5c2b8755e4327004!2sBashundhara%20City%20Shopping%20Complex!5e0!3m2!1sen!2sbd!4v1695122226727!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <p class="fs-5 fw-bold text-center mt-2 text-black-50 mt-lg-5">Please fill the form & Submit</p>
+            <form class="contact-form mt-lg-5">
+              <div class="mb-3">
+                <input type="name" class="form-control" id="Email1" placeholder="Name">
+              </div>
+
+              <div class="mb-3">
+                <input type="email" class="form-control" id="Email1" placeholder="Email">
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" id="Password1" placeholder="Password">
+              </div>
+              <div class="mb-3">
+                <input type="number" class="form-control" id="number" placeholder="Number">
+              </div>
+              <div class=" frommessage">
+                <textarea class="form-control" placeholder="Message" id="floatingTextarea" style="height: 80px"></textarea>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-pink fw-bold btn-lg mb-lg-2 mt-3 px-lg-5">SEND</button>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!--===============================-->   
+   <!--====  contact section end  ====-->   
+   <!--===============================-->  
+
+   <!--===============================-->   
+   <!--====  footer section strat ====-->   
+   <!--===============================-->  
+
+    <section>
+      <div class="container footer-section">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-text">
+              <p class="fs-5 fw-bold mb-3">ABOUT US</p>
+              <p class="text-white-50 fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,</p>
+            </div>
+          </div>
+        <div class="col-lg-3">
+          <div class="footer-text">
+            <p class="fs-5 fw-bold mb-3">NEWSLATER</p>
+            <div class="mt-3">
+              <input type="email" class="form-control" id="Email1" placeholder="Enter your Email">
+            </div>
+            <div class="footer-button">
+              <a type="submit" class="btn btn-pink fw-bold btn-lg mb-lg-2 mt-2 ">SUBSCRIPT</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-text">
+            <p class="fs-5 fw-bold mb-3">NEED HELP</p>
+            <p class="text-white-50 fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-text">
+            <p class="fs-5 fw-bold mb-3">CONTACT US</p>
+            <a href="#"><i class="bi bi-geo-alt-fill fs-5"></i>  GB road 123 london Uk</a>
+            <a href="#"><i class="bi bi-telephone-fill"></i>  +01 123456789</a>
+            <a href="#"><i class="bi bi-envelope-at-fill"></i>  ariyan@gmail.com</a>
+          </div>
+          <div class="ms-2 mt-3">
+            <span class="fs-3 ms-2"><i class="bi bi-facebook"></i></span>
+            <span class="fs-3 ms-2"><i class="bi bi-linkedin"></i></span>
+            <span class="fs-3 ms-2"><i class="bi bi-twitter"></i></span>
+            <span class="fs-3 ms-2"><i class="bi bi-whatsapp"></i></span>
+          </div>
+        </div>
+          
+        </div>
+        <div class="mt-lg-5 fw-bolder text-center">
+          <hr>
+        </div>
+        <div class="text-center">
+          <p class="fw-bold text-white-50">Copyright @2023 All Rights Reserved. Design with by:Akram Hossain</p>
+        </div>
+      </div>
+    </section>
+
+   <!--===============================-->   
+   <!--=====  footer section end =====-->   
+   <!--===============================-->  
+
+
+
+   <!--===============================-->   
+   <!--=== scrollTop section start ===-->   
+   <!--===============================--> 
+  
+   <div class="scrollTop">
+    <a href="#"><i class="bi bi-arrow-up-circle-fill"></i></a>
+   </div>
+   
+   <!--===============================-->   
+   <!--===  scrollTop section end ====-->   
+   <!--===============================-->  
+
+   
+   
+
+
+   
+  
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Bootstrap js  -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+      <!-- counter js -->
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+     
+    
+</body>
+</html>
